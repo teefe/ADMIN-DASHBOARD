@@ -1,4 +1,5 @@
 
+
 .container{
     display: grid;
     grid-template-rows: repeat(4, 165px);
@@ -75,6 +76,9 @@ h6{
     background-color: #fafafa;
     grid-row-start: 2;
     grid-row-end: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .Trending{
     width: 300px;
@@ -83,6 +87,9 @@ h6{
     background-color: #fafafa;
     grid-row-start: 7;
     grid-row-end: 11;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 .cements{
     margin-top: 10px;
@@ -92,44 +99,58 @@ h6{
 }
 
 .upper-sect{
+    display: grid;
     height: 82px;
+    grid-template-columns: repeat(30,1fr);
+    align-items: center;
+    justify-content: center;
 }
 .lower-sect{
     display: grid;
-    grid-template-columns: repeat(20,1fr);
+    grid-template-columns: repeat(30,1fr);
+    grid-template-rows: repeat(1,1fr);
     height: 81px;
 
 }
 .lower-sect-right{
     display: grid;
-    grid-column-start:14;
-    grid-column-end: 20;
-    grid-template-columns: repeat(3,1fr);
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    grid-column-start:20;
+    grid-column-end: 28;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    column-gap: 20px;
 }
 .lower-sect-left{
     display: grid;
     grid-template-rows: repeat(4,1fr);
     grid-column-start:4;
-    grid-column-end: 9;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end:2;
 
 }
 .profile-pic{
-    width: 80%;
-    height: 80%;
+    width: 50px;
+    height: 50px;
     border: #166534 solid 1px;
     border-radius: 100%;
     display: grid;
-    grid-column-start:2;
+    align-items: center;
+    justify-content: center;
+    grid-column-start:3;
     grid-column-end: 4;
+    margin-top: 15px;
+    margin-right: 10px;
 }
 button{
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: #166534;
     color: whitesmoke;
+    grid-row-start: 2;
+    grid-row-end:3;
+    height: 30px;
+    width: 60px;
 }
 .name{
     grid-row-start:3;
@@ -140,4 +161,95 @@ h6{
     grid-row-start:2;
     grid-row-end: 3;
     margin:0px
+}
+.name1{
+    grid-column-start:25;
+    grid-column-end: 30;
+    margin: 0px;
+}
+.profile-pic1{
+    width: 50px;
+    height: 50px;
+    border: #166534 solid 1px;
+    border-radius: 100%;
+    display: grid;
+    grid-column-start:22;
+    grid-column-end: 24;
+}
+input{
+    height: 20px;
+    border: #65a30d solid 1px;
+    background-color: #f7fee7;
+    border-radius: 10px;
+    grid-column-start:3;
+    grid-column-end: 17;
+}
+label{
+    grid-column-start:2;
+    grid-column-end: 3;
+}
+.icons{
+    height: 45px;
+    display: flex;
+    align-items:flex-end;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-right: 10px;
+}
+.text{
+    margin: 10px;
+    margin-left: 15px;
+    font-size: small;
+}
+.text-head{
+    font-size: larger;   
+}
+.side-icons{
+    margin-right: 20px;
+    height: 20px;
+    width: 20px;
+}
+.side-headings{
+    margin-bottom: 50px;
+}
+.dash{
+    display: flex;
+    margin-right: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.home{
+    margin-top: 40px;
+}
+.name2{
+    grid-column-start:20;
+    grid-column-end: 23;
+    margin: 0px;
+}
+.cements-divs{
+    border-bottom: #166534 1px solid;
+    font-size: small;
+    padding: 10px;
+}
+.text-cements{
+    font-size: small;
+}
+.cements-div{
+    font-size: small;
+    padding: 10px;
+}
+.trend-pic{
+    width: 40px;
+    height: 40px;
+    border: #166534 solid 1px;
+    border-radius: 100%;
+}
+.person-data{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.trends-msg{
+    margin: 0px;
+    font-weight: normal;
 }
